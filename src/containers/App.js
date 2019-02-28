@@ -3,7 +3,6 @@ import Crops from './Crops';
 import './App.css';
 
 const API_URL = process.env.REACT_APP_API_URL;
-
 class App extends Component {
   constructor(props) {
     super(props)
@@ -20,7 +19,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <Crops crops={this.state.crops} />
