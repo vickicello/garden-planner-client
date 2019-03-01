@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import CropCard from '../components/CropCard';
 import CropForm from './CropForm';
+import { getCrops } from '../actions/crops';
 import './Crops.css'
 
 class Crops extends Component {
+
+  componentDidMount() {
+    this.props.getCrops()
+  }
 
   render() {
     return(
@@ -17,4 +23,10 @@ class Crops extends Component {
 
 }
 
-export default Crops;
+const mapStateToProps = (state) => {
+  return ({
+    crops: state.crops
+  })
+}
+
+export default connect(mapStateToProps, { getCrops })(Crops);
