@@ -15,7 +15,9 @@ import { createCrop } from '../actions/crops';
   
     handleOnSubmit = event => {
       event.preventDefault()
-      this.props.createCrop(this.props.cropFormData)
+      this.props.createCrop(this.props.cropFormData).then(() =>
+      this.props.history.push('/crops')
+     )
     }
 
     render() {
@@ -33,7 +35,7 @@ import { createCrop } from '../actions/crops';
 
       return(
         <div className="CropForm">
-          Add a New Crop:
+          <h3>Add a New Crop:</h3>
           <form onSubmit={this.handleOnSubmit}>
           <div className="CropFormInput">
             <label htmlFor="name">Name: </label>
