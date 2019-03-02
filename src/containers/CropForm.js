@@ -32,11 +32,11 @@ import { createCrop } from '../actions/crops';
       } = this.props.cropFormData;
 
       return(
-        <div>
+        <div className="CropForm">
           Add a New Crop:
           <form onSubmit={this.handleOnSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
+          <div className="CropFormInput">
+            <label htmlFor="name">Name: </label>
             <input 
               type="text"
               onChange={this.handleOnChange}
@@ -44,8 +44,8 @@ import { createCrop } from '../actions/crops';
               value={name}
             />
           </div>
-          <div>
-            <label htmlFor="variety">Variety:</label>
+          <div className="CropFormInput">
+            <label htmlFor="variety">Variety: </label>
             <input 
               type="text"
               onChange={this.handleOnChange}
@@ -53,8 +53,8 @@ import { createCrop } from '../actions/crops';
               value={variety}
             />
           </div>
-          <div>
-            <label htmlFor="harvest">Harvest Timeframe:</label>
+          <div className="CropFormInput">
+            <label htmlFor="harvest">Harvest Timeframe: </label>
             <input 
               type="text"
               onChange={this.handleOnChange}
@@ -62,8 +62,8 @@ import { createCrop } from '../actions/crops';
               value={harvest}
             />
           </div>
-          <div>
-            <label htmlFor="days_to_harvest">Days to Harvest:</label>
+          <div className="CropFormInput">
+            <label htmlFor="days_to_harvest">Days to Harvest: </label>
             <input 
               type="number"
               onChange={this.handleOnChange}
@@ -71,8 +71,8 @@ import { createCrop } from '../actions/crops';
               value={days_to_harvest}
             />
           </div>
-          <div>
-            <label htmlFor="number_of_beds">Number of Beds:</label>
+          <div className="CropFormInput">
+            <label htmlFor="number_of_beds">Number of Beds: </label>
             <input 
               type="number"
               onChange={this.handleOnChange}
@@ -80,8 +80,8 @@ import { createCrop } from '../actions/crops';
               value={number_of_beds}
             />
           </div>
-          <div>
-            <label htmlFor="notes">Notes:</label>
+          <div className="CropFormInput">
+            <label htmlFor="notes">Notes: </label>
             <input 
               type="text"
               onChange={this.handleOnChange}
@@ -89,8 +89,8 @@ import { createCrop } from '../actions/crops';
               value={notes}
             />
           </div>
-          <div>
-            <label htmlFor="img_url">Image URL:</label>
+          <div className="CropFormInput">
+            <label htmlFor="img_url">Image URL: </label>
             <input 
               type="text"
               onChange={this.handleOnChange}
@@ -98,8 +98,8 @@ import { createCrop } from '../actions/crops';
               value={img_url}
             />
           </div>
-          <div>
-            <label htmlFor="sow_by">Sow By:</label>
+          <div className="CropFormInput">
+            <label htmlFor="sow_by">Sow By: </label>
             <input 
               type="date"
               onChange={this.handleOnChange}

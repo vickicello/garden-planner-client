@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import CropCard from '../components/CropCard';
-import CropForm from './CropForm';
 import { getCrops } from '../actions/crops';
 import './Crops.css'
 
@@ -16,7 +15,6 @@ class Crops extends Component {
       <div className="CropsContainer">
       <h1>Crops</h1>
       {this.props.crops.map(crop => <CropCard key={crop.id} crop={crop} />)}
-      <CropForm />
     </div>
     )
   }

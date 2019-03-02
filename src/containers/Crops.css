@@ -19,3 +19,22 @@
 .CropImage {
   width: 70%;
 } 
+
+.CropForm {
+  padding: 14px;
+  height: 650px;
+  width: 100%;
+  text-align: left;
+  background: #e5fce9;
+  border: 1px darkolivegreen;
+}
+
+.Navbar {
+  height: '200px';
+  margin: '10px 6px 6px 10px';
+  background-color: green;
+}
+
+.CropFormInput {
+  padding: 8px;
+}
