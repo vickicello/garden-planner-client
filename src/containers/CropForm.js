@@ -83,7 +83,7 @@ import { createCrop } from '../actions/crops';
           <div>
             <label htmlFor="notes">Notes:</label>
             <input 
-              type="notes"
+              type="text"
               onChange={this.handleOnChange}
               name="notes"
               value={notes}
@@ -101,7 +101,7 @@ import { createCrop } from '../actions/crops';
           <div>
             <label htmlFor="sow_by">Sow By:</label>
             <input 
-              type="number"
+              type="date"
               onChange={this.handleOnChange}
               name="sow_by"
               value={sow_by}
@@ -112,6 +112,12 @@ import { createCrop } from '../actions/crops';
           </form>
         </div>
       )
+    }
+  }
+
+  const mapStateToProps = state => {
+    return {
+      cropFormData: state.cropFormData
     }
   }
 

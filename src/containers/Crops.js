@@ -20,7 +20,6 @@ class Crops extends Component {
     </div>
     )
   }
-
 }
 
 const mapStateToProps = (state) => {
