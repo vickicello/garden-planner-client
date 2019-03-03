@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import CropCard from '../components/CropCard';
 import { getCrops } from '../actions/crops';
-import { deleteCrop } from '../actions/crops';
 import './Crops.css'
 
 class Crops extends Component {
@@ -27,4 +26,4 @@ const mapStateToProps = (state) => {
   })
 }
 
-export default connect(mapStateToProps, { getCrops, deleteCrop })(Crops);
+export default connect(mapStateToProps, { getCrops, })(Crops);

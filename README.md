@@ -1,4 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Garden Planner
+Welcome to Garden Planner, a website where you can keep track of crops in your garden. This website was created using React and Redux, and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+You will also need the Garden-Planner-API to use the app; please visit https://github.com/vickicello/garden-planner-api for more information.
+
+## Installation
+Fork and clone the repository.  From the terminal (in the project directory), run npm install && npm start to install dependencies and start the browser.  Make sure that you also have your PostgreSQL server running, and the rails API running - see https://github.com/vickicello/garden-planner-api for instructions.
+
+## Contributing
+Feedback and pull requests are welcome at https://github.com/vickicello/garden-planner-client.  This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+
+## License
+The code is available as open source under the terms of the MIT License.
+
 
 ## Available Scripts
 

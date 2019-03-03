@@ -2,8 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const linkStyle = {
-  // width: '100px',
-  // padding: '12px',
   margin: '10px 6px 6px 10px',
   background: 'green',
   textDecoration: 'none',

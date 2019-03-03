@@ -17,12 +17,12 @@ const addCrop = crop => {
   }
 } 
 
-const removeCrop = crop => {
-  return {
-    type: 'DELETE_CROP_SUCCESS',
-    crop
-  }
-}
+// const removeCrop = crop => {
+//   return {
+//     type: 'DELETE_CROP_SUCCESS',
+//     crop
+//   }
+// }
 
 // ** Async Actions **
 export const getCrops = () => {
@@ -52,15 +52,15 @@ export const createCrop = crop => {
   }
 }
 
-export const deleteCrop = (cropId, routerHistory) => {
-  return dispatch => {
-    return fetch(`${API_URL}/crops/${cropId}`, {
-      method: "DELETE",
-    })
-    .then(response => {
-      routerHistory.replace('/crops');
-      dispatch(removeCrop(cropId));
-    })
-    .catch(error => console.log(error))
-  }
-}
+// export const deleteCrop = (cropId, routerHistory) => {
+//   return dispatch => {
+//     return fetch(`${API_URL}/crops/${cropId}`, {
+//       method: "DELETE",
+//     })
+//     .then(response => {
+//       routerHistory.replace('/crops');
+//       dispatch(removeCrop(cropId));
+//     })
+//     .catch(error => console.log(error))
+//   }
+// }
