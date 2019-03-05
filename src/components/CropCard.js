@@ -1,5 +1,5 @@
 import React from 'react';
-// import { deleteCrop } from '../actions/crops';
+import { deleteCrop } from '../actions/crops';
 
 const CropCard = ({ crop }) => (
   <div key={crop.id} className="CropCard">
@@ -10,11 +10,13 @@ const CropCard = ({ crop }) => (
     <p>Notes: {crop.notes}</p>
     <p>Number of Beds: {crop.number_of_beds}</p>
     <p>Sow by: {crop.sow_by}</p>
-    {/* <button className="deleteCrop"
-      onClick={() => deleteCrop(crop.id)}>
+    <button className="deleteCrop"
+      onClick={deleteCrop(crop.id)
+      }>
       Delete Crop
-    </button> */}
+    </button>
   </div>
 )
+
 
 export default CropCard;

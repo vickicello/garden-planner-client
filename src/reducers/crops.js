@@ -6,8 +6,12 @@ export default (state = [], action) => {
     case 'CREATE_CROP_SUCCESS':
       return state.concat(action.crop);
 
-    // case 'DELETE_CROP_SUCCESS':
-    //   return {crops: state.crops.filter(crop => crop.id !== action.payload)};
+    case 'DELETE_CROP_SUCCESS':
+      const newCrops = state.crops.filter(crop => crop !== action.payload)
+      return {
+        ...state,
+        crops: newCrops
+      };
 
     default: 
       return state;
