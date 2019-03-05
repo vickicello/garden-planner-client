@@ -52,14 +52,17 @@ export const createCrop = crop => {
   }
 }
 
-// export const deleteCrop = (cropId, routerHistory) => {
+// export const deleteCrop = cropId => {
 //   return dispatch => {
 //     return fetch(`${API_URL}/crops/${cropId}`, {
 //       method: "DELETE",
-//     })
-//     .then(response => {
-//       routerHistory.replace('/crops');
-//       dispatch(removeCrop(cropId));
+//       headers: {
+//         "Content-Type": "application/json"
+//       }
+//     }).then(response => response.json())
+//       .then(crop => {
+//         dispatch(removeCrop(crop)
+//       })
 //     })
 //     .catch(error => console.log(error))
 //   }
