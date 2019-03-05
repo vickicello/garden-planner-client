@@ -35,6 +35,14 @@ const NavigationBar = () => {
           background: 'green'
         }}
         >Add a Crop</NavLink>
+        <NavLink
+        to="/about"
+        exact
+        style={linkStyle}
+        activeStyle={{
+          background: 'green'
+        }}
+        >About</NavLink>
     </div>
 
   )

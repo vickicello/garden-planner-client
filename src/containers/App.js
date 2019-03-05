@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Crops from './Crops';
 import CropForm from './CropForm';
 import Home from '../components/Home';
+import About from '../components/About';
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
             <Route exact path='/' component={Home}/>
             <Route exact path='/crops' component={Crops}/>
             <Route exact path='/crops/new' component={CropForm}/>
+            <Route exact path='/about' component={About}/>
           </Switch>
         <Footer />
       </div>
