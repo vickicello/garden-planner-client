@@ -26,3 +26,13 @@
 .HomeText {
   padding: 20px;
 }
+
+.About {
+  background: #e5fce9;
+  height: 600px;
+  margin: 20px;
+}
+
+.AboutText {
+  padding: 20px;
+}
