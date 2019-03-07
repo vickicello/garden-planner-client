@@ -35,6 +35,7 @@ export const getCrops = () => {
 }
 
 export const createCrop = crop => {
+  console.log('C')
   return dispatch => {
     return fetch(`${API_URL}/crops`, {
       method: "POST",
@@ -45,11 +46,13 @@ export const createCrop = crop => {
     })
       .then(response => response.json())
       .then(crop => {
+        console.log('D')
         dispatch(addCrop(crop))
         dispatch(resetCropForm())
       })
       .catch(error => console.log(error))
   }
+  console.log('E')
 }
 
 export const deleteCrop = cropId => {

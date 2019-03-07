@@ -15,9 +15,11 @@ import { createCrop } from '../actions/crops';
   
     handleOnSubmit = event => {
       event.preventDefault()
+      console.log('A')
       this.props.createCrop(this.props.cropFormData).then(() =>
       this.props.history.push('/crops')
      )
+     console.log('B')
     }
 
     render() {

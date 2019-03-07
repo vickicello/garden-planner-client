@@ -1,6 +1,15 @@
 import React from 'react';
 import { deleteCrop } from '../actions/crops';
 
+
+  let counter = 0;
+
+  function handleClick(e) {
+    e.preventDefault();
+    counter += 1
+    return counter;
+  }
+
 const CropCard = ({ crop }) => (
   <div key={crop.id} className="CropCard">
     <h3>{crop.name} - {crop.variety}</h3>
@@ -14,6 +23,9 @@ const CropCard = ({ crop }) => (
       onClick={deleteCrop(crop.id)
       }>
       Delete Crop
+    </button>
+    <button onClick={handleClick}>
+      Likes: counter
     </button>
   </div>
 )
