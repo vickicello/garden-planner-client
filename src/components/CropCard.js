@@ -1,14 +1,6 @@
 import React from 'react';
 import { deleteCrop } from '../actions/crops';
-
-
-  let counter = 0;
-
-  function handleClick(e) {
-    e.preventDefault();
-    counter += 1
-    return counter;
-  }
+import LikeButton from './LikeButton';
 
 const CropCard = ({ crop }) => (
   <div key={crop.id} className="CropCard">
@@ -24,9 +16,7 @@ const CropCard = ({ crop }) => (
       }>
       Delete Crop
     </button>
-    <button onClick={handleClick}>
-      Likes: counter
-    </button>
+    <LikeButton />
   </div>
 )
 

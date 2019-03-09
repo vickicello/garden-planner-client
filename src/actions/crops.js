@@ -52,7 +52,7 @@ export const createCrop = crop => {
       })
       .catch(error => console.log(error))
   }
-  console.log('E')
+  
 }
 
 export const deleteCrop = cropId => {
