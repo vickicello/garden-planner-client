@@ -10,7 +10,7 @@ class LikeButton extends Component {
   }
 
   updateCounter() {
-    this.setState((prevState, props) => {
+    this.setState((prevState) => {
       return { counter: prevState.counter + 1 }
     });
   }
