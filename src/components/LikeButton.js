@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class LikeButton extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       counter: 0,
@@ -17,7 +17,7 @@ class LikeButton extends Component {
 
   render() {
     return (
-      <button onClick={() => this.updateCounter()}>
+      <button onClick={()=> this.updateCounter()}>
         Likes: {this.state.counter} 
       </button>
     );
